@@ -9,14 +9,14 @@ const Hero = () => {
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingX} absolute inset-0 top-[150px] max-w-7xl mx-auto flex flex-row items-start gap-5`} >
         <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915eff] ' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
+          <div className='w-5 h-5 rounded-full bg-[#FEB827] ' />
+          <div className='w-1 sm:h-80 h-40 gold-gradient' />
         </div>
         <div >
-          <h1 className={`${styles.heroHeadText} text-white`}>Hi, I&lsquo;m <span className='text-[#915eff]'>Hannes</span></h1>
+          <h1 className={`${styles.heroHeadText} text-white`}>Hi, I&lsquo;m <span className='text-[#FEB827]'>Hannes</span></h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I&lsquo;m soon a <span className="text-[#915eff]">full-stack web developer</span> with a passion for creating beautiful, user-friendly websites.
-            I am currently on my last year of my studies at <span className="text-[#915eff]">Yrgo</span> in Gothenburg.
+            I&lsquo;m a soon to be <span className="text-[#FEB827]">full-stack web developer</span> with a passion for creating beautiful, user-friendly websites.
+            I am currently on my last year of my studies at <span className="text-[#FEB827]">Yrgo</span> in Gothenburg.
             
           </p>
         </div>

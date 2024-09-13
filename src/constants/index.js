@@ -1,4 +1,15 @@
 import {
+  tic,
+  mojag,
+  retro,
+  lia,
+  krogare,
+  chuck,
+  protech,
+  boras,
+  snake,
+  yrgo,
+  scaffcalc,
   mobile,
   backend,
   creator,
@@ -14,14 +25,8 @@ import {
   mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  docker,  
+  anki,
   threejs,
 } from "../assets";
 
@@ -31,8 +36,8 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "works",
+    title: "Works",
   },
   {
     id: "contact",
@@ -111,14 +116,14 @@ const technologies = [
   {
     name: "docker",
     icon: docker,
-  },
+  },  
 ];
 
 const experiences = [
   {
     title: "Nursing Assistant",
     company_name: "Östra Sjukhuset",
-    icon: starbucks,
+    icon: snake,
     iconBg: "#383E56",
     date: "March 2004 - April 2010",
     points: [
@@ -130,7 +135,7 @@ const experiences = [
   {
     title: "Fil. Kand. Nursing",
     company_name: "Borås Högskola",
-    icon: tesla,
+    icon: boras,
     iconBg: "#E6DEDD",
     date: "Sep 2010 - Jun 2013",
     points: [
@@ -144,7 +149,7 @@ const experiences = [
   {
     title: "Reg. Nurse",
     company_name: "Östra Sjukhuset",
-    icon: shopify,
+    icon: snake,
     iconBg: "#383E56",
     date: "Jun 2013 - Jan 2016",
     points: [
@@ -158,9 +163,23 @@ const experiences = [
   },
   {
     title: "Fil. Mag. Aneasthesic Nurse",
-    company_name: "Meta",
-    icon: meta,
+    company_name: "Borås Högskola",
+    icon: boras,
     iconBg: "#E6DEDD",
+    date: "Jan 2016 - Dec 2023",
+    points: [
+     "Learning Anesthesic care.",
+      "How to administering anesthesia and monitoring patients during surgery.",
+      "How to provide post-operative care and pain management.",
+      "Learn to collaborating with surgeons, anesthesiologists, and other healthcare professionals to ensure patient safety.",
+      
+    ],
+  },
+  {
+    title: "Aneasthesic Nurse",
+    company_name: "Sahlgrenska Sjukhuset, Region Halland, Kålltorps Hospice",
+    icon: snake,
+    iconBg: "#383E56",
     date: "Jan 2016 - Dec 2023",
     points: [
      "Anesthesia care for patients undergoing surgery.",
@@ -168,12 +187,13 @@ const experiences = [
       "Providing post-operative care and pain management.",
       "Collaborating with surgeons, anesthesiologists, and other healthcare professionals to ensure patient safety.",
       "Participating in emergency response teams to provide critical care in life-threatening situations.",
+      "Caring for patients at the end of life in hospice care.",
     ],
   },
   {
     title: "Fullstack Developer program",
     company_name: "Yrgo",
-    icon: meta,
+    icon: yrgo,
     iconBg: "#E6DEDD",
     date: "Sep 2023 - Jun 2025",
     points: [
@@ -191,8 +211,8 @@ const experiences = [
   {
     title: "Fullstack Developer Internship",
     company_name: "Scaffcalc",
-    icon: meta,
-    iconBg: "#E6DEDD",
+    icon: scaffcalc,
+    iconBg: "#383E56",
     date: "Nov 2024 - Mar 2025",
     points: [
      "Developing and maintaining scaffolding software. Built in react with three.js for 3d modeling alongside three/fiber, three/drei etc.",
@@ -207,42 +227,64 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Grymt jobbat! Så glad över det ni har åstadkommit! 😊 Vi är så glada över vår nya sida.",
+    name: "Anja Nerhall",
+    designation: "Head of Purchase Analysis",
+    company: "Svenska Krögare",
+    image: "https://www.krogare.se/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fixwfuyd01yvl%2F5h2NpgygBwiZcmfsASIRXH%2F62a143a0fe75cda92687443a358b836e%2FAnja_Nerhall.jpg&w=384&q=75",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Jag fick mer än vad jag bad om. Hannes gick in 100% för att skapa en sida där jag kan göra mer än bara visa upp mina produkter. Jag fick ett eget litet hem på internet!",
+    name: "Annika Alexandersson",
+    designation: "Creator",
+    company: "Mormorochjag",
+    image: anki,
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+      "Efter att Hannes hjälpte oss så känner vi oss väldigt, väldigt, tacksamma!",
+    name: "Ewa Josefsson",
+    designation: "Member",
+    company: "44833 Ricklevägen",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Mormorochjag",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Combined website for displaying and selling homemade products, with a blog and a gallery section.",
     tags: [
       {
-        name: "react",
+        name: "Next.js",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Sanity CMS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },      
+    ],
+    image: mojag,
+    source_code_link: "https://github.com/HannesAlexandersson/Mormorochjag",
+    link: "https://mormorochjag.vercel.app/",
+  },
+  {
+    name: "Svenska Krögare",
+    description:
+      "Full reworked website for a restaurant association, with a member section and a newsletter. Web-to-leads integration with Salesforce and mailchimp.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Contentful CMS",
         color: "green-text-gradient",
       },
       {
@@ -250,37 +292,17 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: krogare,
+    source_code_link: "https://github.com/krogare/krogare",
+    link: "https://www.krogare.se/",
   },
   {
-    name: "Job IT",
+    name: "LIA meetup",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "An event site for the LIA meetup event. Lets the students and companies matchmake based on preferences. A school assignment.",
     tags: [
       {
         name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
@@ -291,9 +313,102 @@ const projects = [
         name: "css",
         color: "pink-text-gradient",
       },
+      {
+        name: "express.js",
+        color: "green-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: lia,
+    source_code_link: "https://github.com/HannesAlexandersson/Branshevent",
+    link: "https://liameetup.vercel.app/",
+  },
+  {
+    name: "Protech",
+    description:
+      "A school project where we teamed up with the Digital Design students to create a fictive landing page for a fictive product.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "vanilla js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "php",
+        color: "green-text-gradient",
+      },
+    ],
+    image: protech,
+    source_code_link: "https://github.com/HannesAlexandersson/Protech",
+    link: "https://alexanderochson.se/Protech/",
+  },
+  {
+    name: "Chuck Norris joke generator",
+    description:
+      "As our first react assignment we where to write an simple app that uses a open API. We choose to create a Chuck Norris joke generator.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },      
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },      
+    ],
+    image: chuck,
+    source_code_link: "https://github.com/HannesAlexandersson/The-Chuck-Norris-generator",
+    link: "https://the-chuck-norris-generator.vercel.app/",
+  },
+  {
+    name: "Retronautica",
+    description:
+      "One of the very first school projects. Its a landing page and a detail page for a fictive cinema. We choose a theme of sci-fi and retro.",
+    tags: [
+      {
+        name: "php",
+        color: "blue-text-gradient",
+      },      
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "vanilla js",
+        color: "pink-text-gradient",
+      },      
+    ],
+    image: retro,
+    source_code_link: "https://github.com/HannesAlexandersson/Retronautica",
+    link: "https://alexanderochson.se/Retronautica/",
+  },
+  {
+    name: "Tick Tack Toe",
+    description:
+      "The very first typescript assignment. I made a simple tic tac toe game, complete with AI and multiplayer modes.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },      
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "green-text-gradient",
+      },      
+    ],
+    image: tic,
+    source_code_link: "https://github.com/HannesAlexandersson/typescriptProject",
+    link: "https://typescript-project-three.vercel.app/",
   },
 ];
 
