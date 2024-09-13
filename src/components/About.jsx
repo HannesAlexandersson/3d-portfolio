@@ -48,11 +48,11 @@ const About = () => {
         I have a background in as a public servant and have worked my entire life in the public healthcare system.
         My background as a nurse have given me a unique perspective on how to approach problems and how to work with people.
         I have always had a passion for technology and have been working on my programming skills for the past years.
-        My education is from Yrgo, wich is recognized as one of the best schools in Gothenburg for programming by the branch itself.
+        My education is from Yrgo, wich is recognized as one of the best schools in Gothenburg for programming by the industry itself.
         I strive to build user-friendly and accessible applications that are both visually appealing and functional. I always want the customer
         to feel included in the process and I always strive to deliver the best possible product.
         I can create websites and applications using modern technologys such as React, Next, Node, Express, MongoDB, PostgreSQL, and more.
-        Whatever the customer needs I can deliver. I try to stay away from old outdated techs like Wordpress even though it is still popular and reliable, its imo outdated and is slowly getting faded out.
+        Whatever the customer needs I can deliver. I try to stay away from old outdated techs like Wordpress even though it is still popular and reliable, its in my opinion outdated and is slowly getting faded out.
         With an modern techstack you can future proof your application and make it easier to maintain and update.
       </motion.p>
 
